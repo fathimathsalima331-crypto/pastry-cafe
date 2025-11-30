@@ -1,0 +1,402 @@
+/* Original CSS (kept as-is) */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header {
+    background-color: rgb(255, 255, 255);
+    padding: 40px 60px;
+}
+
+.navbar {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar h2 {
+    color: rgb(68, 45, 45);
+    font-size: 2rem;
+}
+
+.navbar span {
+    color: rgb(221, 160, 160);
+    font-size: 2rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+    font-size: 1.5rem;
+}
+
+.nav-links a {
+    color: rgb(80, 41, 56);
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: rgb(168, 137, 137);
+}
+
+.past {
+    background-image: url('cgke.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(49, 29, 43);
+}
+
+.pastry {
+    background: rgba(0, 0, 0, 0.1);
+    padding: 100px;
+    border-radius: 10px;
+    max-width: 600px;
+    z-index: 1;
+}
+
+.past .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(124, 114, 114, 0.5);
+}
+
+.pastry h2 {
+    color: rgb(255, 255, 255);
+    margin-bottom: 1px;
+    font-size: 1.7rem;
+}
+
+.pastry p {
+    color: rgb(255, 255, 255);
+    margin-bottom: 18px;
+}
+
+.pastry .btn {
+    display: inline-block;
+    background-color: rgb(153, 113, 113);
+    color: rgb(39, 14, 14);
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-bottom: 2px;
+    border-radius: 20px;
+    transition: transform 0.5s;
+}
+
+.pastry .btn:hover {
+    background-color: rgb(197, 214, 228);
+    color: rgb(9, 19, 27);
+    transform: scaleX(1.15);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.about {
+    background-color: rgb(255, 255, 255);
+    padding: 100px 80px;
+}
+
+.about h2 {
+    color: rgb(141, 75, 75);
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.about p {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 2px;
+}
+
+.about-content {
+    display: flex;
+    gap: 20px;
+    text-align: center;
+    justify-content: center;
+    padding: 80px 200px;
+}
+
+.about-content img {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 10vh;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.about-box {
+    border-radius: 20px;
+    width: 250px;
+    background-color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    transition: transform 0.5s;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(218, 58, 58, 0.1);
+}
+
+.about-box:hover {
+    box-shadow: 0 4px 10px rgba(10, 29, 204, 0.1);
+    transform: translateY(-12px);
+}
+
+.about-box h3 {
+    margin-top: 30px;
+    color: rgb(105, 44, 44);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.about-content p {
+    color: rgb(8, 16, 39);
+    font-family: monospace;
+    text-align: center;
+    margin: auto;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    letter-spacing: normal;
+}
+
+.menu {
+    background-color: rgb(245, 235, 235);
+    padding: 80px 100px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: rgb(116, 53, 53);
+}
+
+.menu-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    background-color: rgb(255, 255, 255);
+    padding: 80px 100px;
+    border-radius: 20px;
+}
+
+.menu-box {
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    padding: 60px 40px;
+    transition: transform 0.1s;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(218, 58, 58, 0.1);
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 8px 20px rgba(0, 6, 12, 0.3);
+    transition: transform 0.5s;
+}
+
+.menu-box:hover {
+    box-shadow: 0 8px 20px rgba(51, 8, 8, 0.3);
+    transform: translateY(-12px);
+}
+
+.menu-box img {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 20vh;
+    display: flex;
+    color: rgb(49, 29, 43);
+    margin: auto;
+    border-radius: 10px;
+}
+
+.menu-box h3 {
+    columns: rgb(53, 52, 109);
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+    color: rgb(68, 25, 25);
+}
+
+.menu-box p {
+    color: rgb(24, 4, 4);
+    font-size: medium;
+}
+
+.menu-box span {
+    color: black;
+    font-size: large;
+}
+
+.form {
+   background-color: rgb(245, 245, 245);
+   text-align: center;
+   padding: 100px 80px;
+}
+
+.form-content {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 500px;
+}
+
+.form h2 {
+    font-size: 2rem;
+    color: rgb(102, 68, 68);
+}
+
+.form p {
+    margin-bottom: 10px;
+}
+
+.form-content input,
+.form-content textarea {
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid rgb(202, 154, 163);
+}
+
+.form-content .btn {
+    margin: auto;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: transform 0.5s;
+    background-color: rgb(155, 116, 116);
+    color: rgb(231, 231, 231);
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.form-content .btn:hover {
+    transform: scaleX(1.15);
+    background-color: rgb(127, 127, 156);
+    color: rgb(233, 233, 233);
+}
+
+footer {
+    padding: 60px 80px;
+    background-color: rgb(224, 210, 210);
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* ==================== RESPONSIVE ==================== */
+@media screen and (max-width: 1024px) {
+    .about-content {
+        padding: 50px 100px;
+    }
+
+    .menu-content {
+        padding: 50px 50px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .past {
+        height: 70vh;
+    }
+
+    .pastry {
+        padding: 50px 30px;
+        max-width: 400px;
+    }
+
+    .about-content {
+        flex-direction: column;
+        padding: 50px 20px;
+    }
+
+    .menu-content {
+        flex-direction: column;
+        padding: 50px 20px;
+    }
+
+    .menu-box {
+        width: 80%;
+        padding: 40px 20px;
+    }
+
+    .form {
+        padding: 50px 20px;
+    }
+
+    footer {
+        font-size: 1.2rem;
+        padding: 40px 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .pastry h2 {
+        font-size: 1.5rem;
+    }
+
+    .pastry p {
+        font-size: 0.9rem;
+    }
+
+    .menu-box h3 {
+        font-size: 1rem;
+    }
+
+    .menu-box p {
+        font-size: 0.85rem;
+    }
+
+    .form h2 {
+        font-size: 1.5rem;
+    }
+
+    .form-content input,
+    .form-content textarea {
+        padding: 10px;
+    }
+
+    .form-content .btn {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+}
+/* Animate hamburger into X */
+.hamburger.toggle .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.hamburger.toggle .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.toggle .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
